@@ -25,10 +25,6 @@ const PORT = process.env.PORT || 8080;
 app.use("/api/v1/auth", authRoutes);
 app.use("/api/v1/openai", openaiRoutes);
 
-
-app.get("/", (req, res) => {
-    res.send("<h1>Hi!</h1>")
-});
 connectDB();
 
 app.listen(PORT, () => {
